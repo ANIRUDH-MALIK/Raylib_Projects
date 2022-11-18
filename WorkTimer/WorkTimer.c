@@ -158,6 +158,7 @@ int main ()
                 {
                     currentScreen = WORK;                       // Set to screen to WORK
                     StartTimer(&countdownTimer, workTimer);     // Start workTimer
+                    ClearWindowState(FLAG_FULLSCREEN_MODE);
                     ClearWindowState(FLAG_WINDOW_TOPMOST);      // Clear windows state (Window can be ovelay with another app;ication)
                     SetWindowState(FLAG_WINDOW_HIDDEN);         // Set windows state to hidden
                 }
